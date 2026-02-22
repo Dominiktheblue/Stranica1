@@ -12,38 +12,52 @@
 <body>
 
 <header class="bg-light border-bottom">
-  <div class="container py-3">
-    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container py-2">
 
-      <a class="d-flex align-items-center gap-2 text-decoration-none text-dark" href="index.html">
-        <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/3620c5db90f3b34fcfeff4a3d308665c6f314efc/Logo.svg" width="28" height="28">
-        <strong>Apartman Crikvenica</strong>
+      <a class="navbar-brand d-flex align-items-center gap-2 text-dark" href="index.html">
+        <img
+          src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/3620c5db90f3b34fcfeff4a3d308665c6f314efc/Logo.svg"
+          alt="Logo"
+          width="28"
+          height="28"
+        >
+        <strong class="d-inline-block">Apartman Crikvenica</strong>
       </a>
 
-      <nav class="d-flex flex-wrap gap-2">
-        <a href="#apartman" class="btn btn-sm btn-outline-secondary">Apartman</a>
-        <a href="#galerija" class="btn btn-sm btn-outline-secondary">Galerija</a>
-        <a href="#cijene" class="btn btn-sm btn-outline-secondary">Cijene</a>
-        <a href="#lokacija" class="btn btn-sm btn-outline-secondary">Lokacija</a>
-        <a href="#kontakt" class="btn btn-sm btn-outline-secondary">Kontakt</a>
-        <a href="video.html" class="btn btn-sm btn-outline-secondary">Video</a>
-        <a href="logo-grafika.html" class="btn btn-sm btn-outline-secondary">Logo/Grafika</a>
-      </nav>
+      <!-- Hamburger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Otvori izbornik">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible menu -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-nav ms-auto gap-2 py-2 py-lg-0">
+          <a href="#apartman" class="btn btn-sm btn-outline-secondary">Apartman</a>
+          <a href="#galerija" class="btn btn-sm btn-outline-secondary">Galerija</a>
+          <a href="#cijene" class="btn btn-sm btn-outline-secondary">Cijene</a>
+          <a href="#lokacija" class="btn btn-sm btn-outline-secondary">Lokacija</a>
+          <a href="#kontakt" class="btn btn-sm btn-outline-secondary">Kontakt</a>
+          <a href="video.html" class="btn btn-sm btn-outline-secondary">Video</a>
+          <a href="logo-grafika.html" class="btn btn-sm btn-outline-secondary">Logo/Grafika</a>
+        </div>
+      </div>
 
     </div>
-  </div>
+  </nav>
 </header>
 
 <section class="container py-4">
   <div class="row g-3 align-items-center">
     <div class="col-lg-6">
-      <h1>Apartman u Crikvenici</h1>
-      <p>Udoban smještaj blizu mora s mnoštvo turističkih atrakcija u blizini.</p>
+      <h1 class="mb-2">Apartman u Crikvenici</h1>
+      <p class="mb-3">Udoban smještaj blizu mora s mnoštvo turističkih atrakcija u blizini.</p>
       <a class="btn btn-primary" href="#kontakt">Pošalji upit</a>
     </div>
 
     <div class="col-lg-6">
-      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/hero.jpg" class="img-fluid border">
+      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/hero.jpg" class="img-fluid border" alt="Apartman">
     </div>
   </div>
 </section>
@@ -55,22 +69,22 @@
 
   <div class="row g-2">
     <div class="col-6 col-lg-4">
-      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g1.jpg" class="img-fluid border">
+      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g1.jpg" class="img-fluid border" alt="g1">
     </div>
     <div class="col-6 col-lg-4">
-      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g2.jpg" class="img-fluid border">
+      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g2.jpg" class="img-fluid border" alt="g2">
     </div>
     <div class="col-6 col-lg-4">
-      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g3.jpg" class="img-fluid border">
+      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g3.jpg" class="img-fluid border" alt="g3">
     </div>
     <div class="col-6 col-lg-4">
-      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g4.jpg" class="img-fluid border">
+      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g4.jpg" class="img-fluid border" alt="g4">
     </div>
     <div class="col-6 col-lg-4">
-      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g5.jpg" class="img-fluid border">
+      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g5.jpg" class="img-fluid border" alt="g5">
     </div>
     <div class="col-6 col-lg-4">
-      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g6.jpg" class="img-fluid border">
+      <img src="https://raw.githubusercontent.com/Dominiktheblue/Stranica1/main/g6.jpg" class="img-fluid border" alt="g6">
     </div>
   </div>
 </section>
@@ -81,5 +95,7 @@
   </div>
 </footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
